@@ -1,0 +1,16 @@
+[
+  {
+    "baslik": "Haftalık Antalya Dev Buluşması",
+    "tarih": "2026-11-28",
+    "saat": "14:00 - 17:00",
+    "yer": "Yakında duyurulacak",
+    "aciklama": "Projelerimizi tanıtıyor, teknik workshoplarla birlikte öğreniyor ve Antalya'daki yazılımcılarla tanışıyoruz."
+  },
+  {
+    "baslik": "Frontend Performans Workshopu",
+    "tarih": "2026-11-14",
+    "saat": "14:00 - 16:00",
+    "yer": "Mark Antalya AVM, 4. Kat, Roberts Coffee (Muratpaşa, Antalya)",
+    "aciklama": "Modern web uygulamalarında performans ölçümü ve iyileştirme teknikleri üzerine uygulamalı çalışma."
+  }
+]

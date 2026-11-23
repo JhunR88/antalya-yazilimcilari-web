@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etkinlikler &amp; Haftalık Buluşmalar | Antalya Yazılımcıları</title>
+  
+  <meta name="description" content="Antalya Yazılımcıları haftalık toplantı takvimi, workshoplar, proje sunum saatleri ve geçmiş etkinlik arşivi.">
+  <meta name="keywords" content="antalya yazılım etkinlikleri, antalya teknoloji workshop, antalya kodlama buluşmaları">
+  <meta name="author" content="Antalya Yazılımcıları">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Etkinlikler &amp; Haftalık Buluşmalar | Antalya Yazılımcıları">
+  <meta property="og:description" content="Her hafta Pazar Antalya'da toplanıyor, projelerimizi tanıtıyor ve workshoplar yapıyoruz.">
+  <meta property="og:url" content="https://www.antalyayazilimcilari.com.tr/etkinlikler.html">
+  <meta property="og:image" content="assets/images/antalya-coding-community-logo.png">
+
+  <link rel="icon" type="image/png" href="assets/images/antalya-coding-community-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="brand-link" aria-label="Antalya Yazılımcıları Ana Sayfa">
+        <img src="assets/images/antalya-coding-community-logo.png" alt="Antalya Coding Community Logosu" class="brand-logo" width="46" height="46">
+        <span class="brand-text">ANTALYA <span class="brand-highlight">YAZILIMCILARI</span></span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Ana Menü">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+          <li><a href="projeler.html" class="nav-link">Projeler</a></li>
+          <li><a href="uyeler.html" class="nav-link">Üyeler</a></li>
+          <li><a href="etkinlikler.html" class="nav-link">Etkinlikler</a></li>
+          <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+          <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" type="button" aria-label="Temayı değiştir"></button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav-drawer" aria-label="Menüyü aç/kapat">
+          <span class="hamburger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobil Menü -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobil Gezinme Menüsü">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="nav-link">Ana Sayfa</a>
+      <a href="projeler.html" class="nav-link">Projeler</a>
+      <a href="uyeler.html" class="nav-link">Üyeler</a>
+      <a href="etkinlikler.html" class="nav-link">Etkinlikler</a>
+      <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+      <a href="iletisim.html" class="nav-link">İletişim</a>
+    </nav>
+  </div>
+
+  <!-- Ana İçerik -->
+  <main id="main-content" class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Topluluk Takvimi</span>
+        <h1 class="section-title">Buluşmalar &amp; Atölyeler</h1>
+        <p class="section-subtitle">
+          Her hafta düzenli olarak gerçekleştirdiğimiz toplantılarımız ve teknik atölyelerimize dair tüm detaylar.
+        </p>
+      </div>
+
+      <section aria-labelledby="events-list-title">
+        <div class="section-title-wrap">
+          <span class="section-tag">Etkinlik Takvimi</span>
+          <h2 id="events-list-title" class="section-title">Yaklaşan Toplantılar ve Geçmiş Etkinlikler</h2>
+          <p class="section-subtitle">Toplantı bilgileri etkinlik veri dosyasından otomatik olarak güncellenir.</p>
+        </div>
+        <div id="event-list" class="event-list" aria-live="polite">
+          <div class="empty-state"><p>Etkinlikler yükleniyor...</p></div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Ortak Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link">
+            <img src="assets/images/antalya-coding-community-logo.png" alt="Antalya Coding Community Logosu" class="brand-logo" width="46" height="46">
+            <span class="brand-text">ANTALYA <span class="brand-highlight">YAZILIMCILARI</span></span>
+          </a>
+          <p>
+            Antalya Yazılımcıları topluluğu; yerel yazılımcıların yeteneklerini ve projelerini dünyaya tanıtan bağımsız, açık ve kâr amacı gütmeyen bir teknoloji kolektifidir.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Sayfalar</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Ana Sayfa</a></li>
+            <li><a href="projeler.html" class="footer-link">Tüm Projeler</a></li>
+            <li><a href="uyeler.html" class="footer-link">Topluluk Üyeleri</a></li>
+            <li><a href="etkinlikler.html" class="footer-link">Etkinlikler</a></li>
+            <li><a href="hakkimizda.html" class="footer-link">Hakkımızda</a></li>
+            <li><a href="iletisim.html" class="footer-link">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Topluluk &amp; Katkı</h4>
+          <ul class="footer-links">
+            <li><a href="projeler.html" class="footer-link">Proje Ekleme Rehberi</a></li>
+            <li><a href="hakkimizda.html#kurallar" class="footer-link">Topluluk İlkeleri</a></li>
+            <li><a href="etkinlikler.html" class="footer-link">Haftalık Toplantılar</a></li>
+            <li><a href="iletisim.html" class="footer-link">Sunum Yapmak İstiyorum</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Bağlantılar</h4>
+          <ul class="footer-links">
+            <li><a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="footer-link">Discord Sunucusu</a></li>
+            <li><a href="https://www.instagram.com/j.r_software.academy" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/ceyhun-rahimov-3519a5248" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+            <li><a href="mailto:jayhun9999@gmail.com" class="footer-link">jayhun9999@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Antalya Yazılımcıları. Tüm hakları saklıdır.
+        </div>
+        <div>
+          Web Sitesi: <a href="https://www.antalyayazilimcilari.com.tr">www.antalyayazılımcıları.com.tr</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/etkinlikler.js"></script>
+</body>
+</html>

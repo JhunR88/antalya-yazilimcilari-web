@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topluluk Üyeleri | Antalya Yazılımcıları</title>
+  
+  <meta name="description" content="Antalya Yazılımcıları topluluğu üyeleri, uzmanlık alanları, biyografileri ve geliştirdikleri projeler.">
+  <meta name="keywords" content="antalya yazılımcıları üyeleri, antalya developer listesi, yazılımcı topluluğu">
+  <meta name="author" content="Antalya Yazılımcıları">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Topluluk Üyeleri | Antalya Yazılımcıları">
+  <meta property="og:description" content="Antalya'daki yazılımcılarla tanışın, geliştirdikleri projeleri keşfedin.">
+  <meta property="og:url" content="https://www.antalyayazilimcilari.com.tr/uyeler.html">
+  <meta property="og:image" content="assets/images/antalya-coding-community-logo.png">
+
+  <link rel="icon" type="image/png" href="assets/images/antalya-coding-community-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="brand-link" aria-label="Antalya Yazılımcıları Ana Sayfa">
+        <img src="assets/images/antalya-coding-community-logo.png" alt="Antalya Coding Community Logosu" class="brand-logo" width="46" height="46">
+        <span class="brand-text">ANTALYA <span class="brand-highlight">YAZILIMCILARI</span></span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Ana Menü">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+          <li><a href="projeler.html" class="nav-link">Projeler</a></li>
+          <li><a href="uyeler.html" class="nav-link">Üyeler</a></li>
+          <li><a href="etkinlikler.html" class="nav-link">Etkinlikler</a></li>
+          <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+          <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" type="button" aria-label="Temayı değiştir"></button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav-drawer" aria-label="Menüyü aç/kapat">
+          <span class="hamburger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobil Menü -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobil Gezinme Menüsü">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="nav-link">Ana Sayfa</a>
+      <a href="projeler.html" class="nav-link">Projeler</a>
+      <a href="uyeler.html" class="nav-link">Üyeler</a>
+      <a href="etkinlikler.html" class="nav-link">Etkinlikler</a>
+      <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+      <a href="iletisim.html" class="nav-link">İletişim</a>
+    </nav>
+  </div>
+
+  <!-- Ana İçerik -->
+  <main id="main-content" class="section">
+    <div class="container">
+      <!-- Sayfa Başlığı -->
+      <div class="section-title-wrap">
+        <span class="section-tag">Topluluğumuz</span>
+        <h1 class="section-title">Geliştiriciler &amp; Üyeler</h1>
+        <p class="section-subtitle">
+          Antalya Yazılımcıları topluluğunu oluşturan, her hafta bir araya gelen ve projeler üreten üyelerimiz.
+        </p>
+      </div>
+
+      <!-- Bilgi Notu -->
+      <div style="background: var(--color-accent-subtle); border: 1px solid var(--color-accent-glow); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; margin-bottom: 3rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+        <div style="display: flex; align-items: center; gap: 0.85rem;">
+          <svg style="color: var(--color-accent); flex-shrink: 0;" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          <span style="font-size: 0.95rem; color: var(--text-main);">
+            Topluluğumuzda <strong id="stat-total-members">100+</strong> yazılımcı yer alıyor. Siz de topluluğa katılabilir ve profilinizi ekleyebilirsiniz!
+          </span>
+        </div>
+        <a href="iletisim.html" class="btn btn-primary btn-sm">Aramıza Katıl</a>
+      </div>
+
+      <!-- Üyeler Kart Grid -->
+      <div id="members-grid" class="members-grid" aria-live="polite">
+        <!-- js/uyeler.js tarafından JSON'dan doldurulacak -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Ortak Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link">
+            <img src="assets/images/antalya-coding-community-logo.png" alt="Antalya Coding Community Logosu" class="brand-logo" width="46" height="46">
+            <span class="brand-text">ANTALYA <span class="brand-highlight">YAZILIMCILARI</span></span>
+          </a>
+          <p>
+            Antalya Yazılımcıları topluluğu; yerel yazılımcıların yeteneklerini ve projelerini dünyaya tanıtan bağımsız, açık ve kâr amacı gütmeyen bir teknoloji kolektifidir.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Sayfalar</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Ana Sayfa</a></li>
+            <li><a href="projeler.html" class="footer-link">Tüm Projeler</a></li>
+            <li><a href="uyeler.html" class="footer-link">Topluluk Üyeleri</a></li>
+            <li><a href="etkinlikler.html" class="footer-link">Etkinlikler</a></li>
+            <li><a href="hakkimizda.html" class="footer-link">Hakkımızda</a></li>
+            <li><a href="iletisim.html" class="footer-link">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Topluluk &amp; Katkı</h4>
+          <ul class="footer-links">
+            <li><a href="projeler.html" class="footer-link">Proje Ekleme Rehberi</a></li>
+            <li><a href="hakkimizda.html#kurallar" class="footer-link">Topluluk İlkeleri</a></li>
+            <li><a href="etkinlikler.html" class="footer-link">Haftalık Toplantılar</a></li>
+            <li><a href="iletisim.html" class="footer-link">Sunum Yapmak İstiyorum</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Bağlantılar</h4>
+          <ul class="footer-links">
+            <li><a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="footer-link">Discord Sunucusu</a></li>
+            <li><a href="https://www.instagram.com/j.r_software.academy" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/ceyhun-rahimov-3519a5248" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+            <li><a href="mailto:jayhun9999@gmail.com" class="footer-link">jayhun9999@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Antalya Yazılımcıları. Tüm hakları saklıdır.
+        </div>
+        <div>
+          Web Sitesi: <a href="https://www.antalyayazilimcilari.com.tr">www.antalyayazılımcıları.com.tr</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/uyeler.js"></script>
+</body>
+</html>

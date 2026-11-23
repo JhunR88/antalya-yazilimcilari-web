@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antalya Yazılımcıları | Üye Projeleri &amp; Teknoloji Topluluğu</title>
+  
+  <!-- SEO & Sosyal Paylaşım (Open Graph & Twitter) -->
+  <meta name="description" content="Antalya Yazılımcıları topluluğu üyelerinin geliştirdiği açık kaynak ve yerel projelerin sergilendiği vitrin platformu. Haftalık toplantılar, atölyeler ve teknoloji üretimi.">
+  <meta name="keywords" content="antalya yazılımcıları, antalya yazılım topluluğu, antalya kodlama, akdeniz teknoloji, açık kaynak antalya">
+  <meta name="author" content="Antalya Yazılımcıları">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Antalya Yazılımcıları | Üye Projeleri Vitrini">
+  <meta property="og:description" content="Antalya'daki yazılımcıların ürettiği projeleri keşfedin. Her hafta bir araya geliyor, üretiyor ve paylaşıyoruz.">
+  <meta property="og:url" content="https://www.antalyayazilimcilari.com.tr">
+  <meta property="og:image" content="assets/images/antalya-coding-community-logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/antalya-coding-community-logo.png">
+
+  <!-- Tipografi (Google Fonts: Space Grotesk & Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stiller -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Sabit Three.js sürümü: etkileşimli hero sahnesi -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+
+  <!-- Tema Erken Yükleyici (FOUC Önleyici) -->
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <!-- Erişilebilirlik: Ekran Okuyucu ve Klavye Gezintisi İçin -->
+  <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+
+  <!-- Ortak Header (Navbar) -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="brand-link" aria-label="Antalya Yazılımcıları Ana Sayfa">
+        <img src="assets/images/antalya-coding-community-logo.png" alt="Antalya Coding Community Logosu" class="brand-logo" width="46" height="46">
+        <span class="brand-text">ANTALYA <span class="brand-highlight">YAZILIMCILARI</span></span>
+      </a>
+
+      <!-- Masaüstü Gezinme -->
+      <nav class="nav-desktop" aria-label="Ana Menü">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+          <li><a href="projeler.html" class="nav-link">Projeler</a></li>
+          <li><a href="uyeler.html" class="nav-link">Üyeler</a></li>
+          <li><a href="etkinlikler.html" class="nav-link">Etkinlikler</a></li>
+          <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+          <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sağ Butonlar (Tema + Hamburger) -->
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" type="button" aria-label="Temayı değiştir">
+          <!-- İkon js/theme.js tarafından yerleştirilir -->
+        </button>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav-drawer" aria-label="Menüyü aç/kapat">
+          <span class="hamburger-line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobil Çekmece Menü -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobil Gezinme Menüsü">
+    <nav class="mobile-nav-list">
+      <a href="index.html" class="nav-link">Ana Sayfa</a>
+      <a href="projeler.html" class="nav-link">Projeler</a>
+      <a href="uyeler.html" class="nav-link">Üyeler</a>
+      <a href="etkinlikler.html" class="nav-link">Etkinlikler</a>
+      <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+      <a href="iletisim.html" class="nav-link">İletişim</a>
+    </nav>
+  </div>
+
+  <!-- Ana İçerik -->
+  <main id="main-content">
+    <!-- Hero Bölümü -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div id="hero-3d-scene" aria-hidden="true"></div>
+      <div class="hero-code-orbit" aria-hidden="true">
+        <span class="code-chip code-chip-html">&lt;HTML&gt;</span>
+        <span class="code-chip code-chip-python">Python</span>
+        <span class="code-chip code-chip-csharp">C#</span>
+        <span class="code-chip code-chip-sql">SQL</span>
+        <span class="code-chip code-chip-js">JavaScript</span>
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="ping-dot" aria-hidden="true"></span>
+            <span>Akdeniz'in Bağımsız Yazılım Ekosistemi</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Antalya'da Üretenlerin <br>
+            <span class="gradient-text">Projelerini Keşfedin</span>
+          </h1>
+
+          <p class="hero-rotating-line" aria-live="polite"><span id="typing-text">Birlikte öğreniyoruz.</span><span class="typing-caret" aria-hidden="true"></span></p>
+
+          <p class="hero-desc">
+            Antalya Yazılımcıları; her hafta düzenli toplanan, bilgi paylaşımı ve workshoplar yapan yerel bir teknoloji topluluğudur. Bu platform, üyelerimizin geliştirdiği açık kaynak ve bağımsız projeleri tüm dünyaya sergilemek için kuruldu.
+          </p>
+
+          <div class="hero-actions">
+            <a href="projeler.html" class="btn btn-primary magnetic-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              Projeleri Gör
+            </a>
+            <a href="iletisim.html" class="btn btn-outline magnetic-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              Topluluğa Katıl
+            </a>
+          </div>
+
+          <!-- Canlı İstatistikler -->
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <div id="stat-total-projects" class="stat-number">6+</div>
+              <div class="stat-label">Yayınlanan Proje</div>
+            </div>
+            <div class="hero-stat-item">
+              <div id="stat-total-members" class="stat-number">100+</div>
+              <div class="stat-label">Topluluk Üyesi</div>
+            </div>
+            <div class="hero-stat-item">
+              <div class="stat-number">Her Pazar</div>
+              <div class="stat-label">Düzenli Buluşma</div>
+            </div>
+          </div>
+          <a class="scroll-cue" href="#featured-projects-section" aria-label="Projeler bölümüne kaydır"><span>Keşfet</span><i aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Topluluk Kısa Tanıtımı -->
+    <section class="section" style="background: var(--bg-surface); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Neden Buradayız?</span>
+          <h2 class="section-title">Birlikte Öğreniyor, Birlikte İnşa Ediyoruz</h2>
+          <p class="section-subtitle">Antalya'daki yazılım ekosistemini güçlendirmek ve bireysel projeleri görünür kılmak için bir aradayız.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+          <div style="background: var(--bg-card); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+            <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: var(--color-accent-subtle); display: flex; align-items: center; justify-content: center; color: var(--color-accent); margin-bottom: 1.25rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            </div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 0.6rem;">Haftalık Workshoplar</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Frontend, backend, bulut mimarisi ve IoT gibi alanlarda uygulamalı atölyeler ve teknik paylaşımlar.</p>
+          </div>
+
+          <div style="background: var(--bg-card); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+            <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(59, 130, 246, 0.12); display: flex; align-items: center; justify-content: center; color: #3b82f6; margin-bottom: 1.25rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 0.6rem;">Proje Vitrini &amp; Tanıtım</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Her üye kendi projesini hem topluluk ortamında tanıtır hem de web sitemizde reklam ve erişim gücü kazanır.</p>
+          </div>
+
+          <div style="background: var(--bg-card); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+            <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(16, 185, 129, 0.12); display: flex; align-items: center; justify-content: center; color: #10b981; margin-bottom: 1.25rem;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" y1="8" x2="19" y2="14"></line><line x1="22" y1="11" x2="16" y2="11"></line></svg>
+            </div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 0.6rem;">Açık Kaynak &amp; Mentorluk</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">Kıdemli mühendislerle genç yetenekleri buluşturan samimi, bağımsız ve kâr amacı gütmeyen bir dayanışma ağı.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Öne Çıkan Projeler Bölümü (JSON'dan Dinamik Gelir) -->
+    <section id="featured-projects-section" class="section">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="section-tag">Vitrin</span>
+            <h2 class="section-title" style="margin-bottom: 0.25rem;">Öne Çıkan Üye Projeleri</h2>
+            <p class="section-subtitle">Topluluk üyelerimizin geliştirdiği son yenilikçi çalışmalar.</p>
+          </div>
+          <a href="projeler.html" class="btn btn-outline">
+            Tüm Projeleri İncele
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+
+        <!-- Dinamik Proje Kartları Konteyneri -->
+        <div id="featured-projects-grid" class="projects-grid" aria-live="polite">
+          <!-- js/home.js tarafından projeler.json'dan yüklenir -->
+          <div style="text-align: center; grid-column: 1 / -1; padding: 2rem; color: var(--text-muted);">
+            Öne çıkan projeler yükleniyor...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Yaklaşan Toplantı ve Topluluğa Katıl Bölümü -->
+    <section class="section" style="padding-top: 0;" aria-labelledby="meeting-section-title">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Topluluğa Katıl</span>
+          <h2 id="meeting-section-title" class="section-title">Bizimle Bir Toplantıda Buluş</h2>
+          <p class="section-subtitle">Bu hafta toplulukta neler olduğunu keşfet, birlikte öğrenmeye ve üretmeye katıl.</p>
+        </div>
+
+        <div class="meeting-banner">
+          <div class="meeting-grid">
+            <article class="meeting-info" id="upcoming-meeting" aria-live="polite">
+              <span class="section-tag" style="background: rgba(6, 182, 212, 0.2);">Yaklaşan Toplantı</span>
+              <p>Toplantı bilgileri yükleniyor...</p>
+            </article>
+
+            <aside class="meeting-reasons" aria-labelledby="meeting-reasons-title">
+              <h3 id="meeting-reasons-title">Neden Katılmalısın?</h3>
+              <ul class="meeting-reasons-list">
+                <li><span class="reason-icon" aria-hidden="true">↻</span><span>Her hafta düzenli toplantılar</span></li>
+                <li><span class="reason-icon" aria-hidden="true">✦</span><span>Workshoplarla birlikte öğren</span></li>
+                <li><span class="reason-icon" aria-hidden="true">↗</span><span>Kendi projeni tanıt, geri bildirim al</span></li>
+                <li><span class="reason-icon" aria-hidden="true">◎</span><span>Aynı şehirdeki yazılımcılarla tanış</span></li>
+              </ul>
+            </aside>
+          </div>
+
+          <div id="community-stats" class="community-stats" aria-label="Topluluk istatistikleri" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Ortak Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link">
+            <img src="assets/images/antalya-coding-community-logo.png" alt="Antalya Coding Community Logosu" class="brand-logo" width="46" height="46">
+            <span class="brand-text">ANTALYA <span class="brand-highlight">YAZILIMCILARI</span></span>
+          </a>
+          <p>
+            Antalya Yazılımcıları topluluğu; yerel yazılımcıların yeteneklerini ve projelerini dünyaya tanıtan bağımsız, açık ve kâr amacı gütmeyen bir teknoloji kolektifidir.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Sayfalar</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Ana Sayfa</a></li>
+            <li><a href="projeler.html" class="footer-link">Tüm Projeler</a></li>
+            <li><a href="uyeler.html" class="footer-link">Topluluk Üyeleri</a></li>
+            <li><a href="etkinlikler.html" class="footer-link">Etkinlikler</a></li>
+            <li><a href="hakkimizda.html" class="footer-link">Hakkımızda</a></li>
+            <li><a href="iletisim.html" class="footer-link">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Topluluk &amp; Katkı</h4>
+          <ul class="footer-links">
+            <li><a href="projeler.html" class="footer-link">Proje Ekleme Rehberi</a></li>
+            <li><a href="hakkimizda.html#kurallar" class="footer-link">Topluluk İlkeleri</a></li>
+            <li><a href="etkinlikler.html" class="footer-link">Haftalık Toplantılar</a></li>
+            <li><a href="iletisim.html" class="footer-link">Sunum Yapmak İstiyorum</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Bağlantılar</h4>
+          <ul class="footer-links">
+            <li><a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="footer-link">Discord Sunucusu</a></li>
+            <li><a href="https://www.instagram.com/j.r_software.academy" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/ceyhun-rahimov-3519a5248" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+            <li><a href="mailto:jayhun9999@gmail.com" class="footer-link">jayhun9999@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Antalya Yazılımcıları. Tüm hakları saklıdır.
+        </div>
+        <div>
+          Web Sitesi: <a href="https://www.antalyayazilimcilari.com.tr">www.antalyayazılımcıları.com.tr</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Komut Dosyaları -->
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/etkinlikler.js"></script>
+  <script src="js/scene.js"></script>
+</body>
+</html>

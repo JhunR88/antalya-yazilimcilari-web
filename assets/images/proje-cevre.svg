@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" fill="none">
+  <defs>
+    <linearGradient id="bgCevre" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#071b1d"/>
+      <stop offset="100%" stop-color="#0e2a30"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgCevre)"/>
+  <!-- Dağ Silueti -->
+  <polygon points="100,280 250,140 380,280" fill="#13383e" opacity="0.5"/>
+  <polygon points="280,280 460,110 620,280" fill="#194c54" opacity="0.7"/>
+  <polygon points="500,280 660,160 780,280" fill="#103339" opacity="0.4"/>
+  <!-- IoT Grafiği & Sensör -->
+  <path d="M150 250 L 260 210 L 370 230 L 480 170 L 590 190 L 700 130" stroke="#10b981" stroke-width="3" fill="none"/>
+  <circle cx="480" cy="170" r="8" fill="#10b981"/>
+  <circle cx="480" cy="170" r="16" stroke="#10b981" stroke-width="2" opacity="0.5"/>
+  <rect x="420" y="70" width="120" height="48" rx="8" fill="#0b2024" stroke="#10b981" stroke-width="1.5"/>
+  <text x="480" y="92" text-anchor="middle" fill="#10b981" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">PM2.5: 12 µg/m³</text>
+  <text x="480" y="108" text-anchor="middle" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Toros İstasyon #04</text>
+  <text x="400" y="340" text-anchor="middle" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800">Toros Çevre İzleme Ağı</text>
+  <text x="400" y="370" text-anchor="middle" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="14">Açık Kaynak IoT &amp; Hava Kalitesi Platformu</text>
+</svg>

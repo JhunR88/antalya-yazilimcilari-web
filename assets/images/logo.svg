@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" width="240" height="48" fill="none">
+  <!-- Simge -->
+  <g transform="translate(0, 2)">
+    <rect width="44" height="44" rx="10" fill="#0f172a"/>
+    <rect x="0.5" y="0.5" width="43" height="43" rx="9.5" stroke="#06b6d4" stroke-opacity="0.5"/>
+    <path d="M13 16L7 22L13 28" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M31 16L37 22L31 28" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M25 13L19 31" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <!-- Yazı -->
+  <text x="56" y="24" fill="currentColor" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="-0.02em">ANTALYA</text>
+  <text x="56" y="38" fill="#06b6d4" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="0.08em">YAZILIMCILARI</text>
+</svg>

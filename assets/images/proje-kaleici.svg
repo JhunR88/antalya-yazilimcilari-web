@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" fill="none">
+  <defs>
+    <linearGradient id="bgKaleici" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#191328"/>
+      <stop offset="100%" stop-color="#0b172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgKaleici)"/>
+  <!-- Tarihi Kemer Silueti -->
+  <path d="M220 320 V 170 C 220 120, 300 80, 400 80 C 500 80, 580 120, 580 170 V 320" stroke="#f43f5e" stroke-width="3" opacity="0.4" fill="none"/>
+  <path d="M260 320 V 190 C 260 150, 320 120, 400 120 C 480 120, 540 150, 540 190 V 320" stroke="#06b6d4" stroke-width="2" opacity="0.5" fill="none"/>
+  <!-- Kulaklık & Ses Dalgası Simgesi -->
+  <circle cx="400" cy="200" r="50" fill="#1e2238" stroke="#06b6d4" stroke-width="2"/>
+  <path d="M380 200 C 380 185, 420 185, 420 200" stroke="#38bdf8" stroke-width="4" stroke-linecap="round"/>
+  <rect x="375" y="195" width="8" height="18" rx="4" fill="#f43f5e"/>
+  <rect x="417" y="195" width="8" height="18" rx="4" fill="#f43f5e"/>
+  <!-- Ses Dalgaları -->
+  <path d="M330 200 C 330 160, 470 160, 470 200" stroke="#06b6d4" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+  <path d="M310 200 C 310 140, 490 140, 490 200" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6 6" opacity="0.4"/>
+  <text x="400" y="340" text-anchor="middle" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800">Kaleiçi Sesli Kültür Rehberi</text>
+  <text x="400" y="370" text-anchor="middle" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="14">Konum Duyarlı PWA &amp; Çok Dilli Sesli Tur</text>
+</svg>

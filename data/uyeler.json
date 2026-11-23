@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ceyhun-rahimov",
+    "ad": "Ceyhun Rahimov",
+    "unvan": "Fullstack Developer",
+    "bio": "Modern web mimarileri, frontend ve backend ekosistemlerinde tam yığın çözümler geliştiren deneyimli yazılım mühendisi.",
+    "foto": "assets/images/profil.jpg",
+    "linkedin": "https://www.linkedin.com/in/ceyhun-rahimov-3519a5248",
+    "uzmanliklar": ["JavaScript", "TypeScript", "React", "Node.js", "Fullstack", "System Design"]
+  },
+  {
+    "id": "ahmet-yilmaz",
+    "ad": "Ahmet Yılmaz",
+    "unvan": "Full-Stack Geliştirici & IoT Meraklısı",
+    "bio": "Antalya'da yaşayan, 8 yıldır web teknolojileri ve gömülü sistemler üzerine çalışan yazılım geliştirici. Açık kaynak projelere katkı sağlamayı ve yerel yazılım ekosistemini büyütmeyi seviyor.",
+    "foto": "assets/images/uye-ahmet.svg",
+    "linkedin": "https://www.linkedin.com/in/ceyhun-rahimov-3519a5248",
+    "uzmanliklar": ["TypeScript", "Node.js", "React", "Python", "IoT"]
+  },
+  {
+    "id": "zeynep-kaya",
+    "ad": "Zeynep Kaya",
+    "unvan": "Frontend Geliştirici & UI/UX Tasarımcısı",
+    "bio": "Kullanıcı deneyimi odaklı arayüzler tasarlayan ve modern web standartlarına tutkuyla bağlı bir yazılımcı. Erişilebilirlik (A11y) ve tasarım sistemleri konusunda atölyeler düzenliyor.",
+    "foto": "assets/images/uye-zeynep.svg",
+    "linkedin": "https://www.linkedin.com/in/ceyhun-rahimov-3519a5248",
+    "uzmanliklar": ["Vue.js", "Tailwind CSS", "Figma", "Web Performance", "UI/UX"]
+  },
+  {
+    "id": "mehmet-demir",
+    "ad": "Mehmet Demir",
+    "unvan": "Backend & Cloud Mimarisi Uzmanı",
+    "bio": "Yüksek trafikli dağıtık mimariler ve mikroservis sistemleri geliştiren bulut mühendisi. Antalya Yazılımcıları haftalık teknik sohbetlerinde DevOps ve sistem tasarımı sunumları yapıyor.",
+    "foto": "assets/images/uye-mehmet.svg",
+    "linkedin": "https://www.linkedin.com/in/ceyhun-rahimov-3519a5248",
+    "uzmanliklar": ["Go", "Python", "Docker", "Kubernetes", "PostgreSQL"]
+  },
+  {
+    "id": "canan-ozturk",
+    "ad": "Canan Öztürk",
+    "unvan": "Mobil Uygulama Geliştirici & Topluluk Mentoru",
+    "bio": "Flutter ve yerel mobil ekosistemde uygulamalar geliştiren mobil yazılımcı. Toplulukta genç yazılımcılara ve üniversite öğrencilerine mentorluk yapmaktan büyük keyif alıyor.",
+    "foto": "assets/images/uye-canan.svg",
+    "linkedin": "https://www.linkedin.com/in/ceyhun-rahimov-3519a5248",
+    "uzmanliklar": ["Flutter", "Dart", "Firebase", "Svelte", "Mobile UI"]
+  }
+]
